@@ -12,7 +12,7 @@ function openModal() {
     var modal = document.getElementById('modal')
     modal.classList.value = modal.classList.value === 'modal-disable' ? 'modal' : 'modal-disable'
     if (modal.classList.value) {
-        document.getElementById('result').innerHTML = ''
+        document.getElementById('result').innerHTML = `<div>PREPARAR</div>`
     }
 }
 function sort() {
@@ -32,9 +32,9 @@ function sort() {
             } else {
                 if (count === 0) {
                     clearInterval(interval);
-                    resultDiv.innerHTML = result.toUpperCase()
+                    resultDiv.innerHTML =`<div class='congrats'>PARABÉNS</div><div class='name'>${result.toUpperCase()}</div>` 
                 } else {
-                    resultDiv.innerHTML = count
+                    resultDiv.innerHTML = `<div class='count'>${count}</div>`
                     count--
                 }
             }
