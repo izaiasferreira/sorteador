@@ -60,15 +60,15 @@ body .result .name {
     font-weight: 500;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--primary-text-color);
-    animation: count .5s .1s;
+    animation: count .6s;
 }
 
 body .result .congrats {
-    font-size: 28pt;
-    font-weight: 800;
+    font-size: 35pt;
+    font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--secoundary-color);
-    animation: count .5s;
+    animation: count .3s;
 }
 
 body .modal {
